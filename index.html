@@ -160,14 +160,18 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="center">
-                <h3>Let's Talk!</h3>
+                <h3>Get in Touch!</h3>
                 <p>Send me an email</p>
             </div>
 
             <div class="action">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="be341bdb-1cd0-4010-8a30-4b0a96506fdc">
+                    <input type="name" name="name" placeholder="Your First and Last Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="submit" name="submit" value="Submit">
+                    <textarea type="message" placeholder="Your Message" required></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
                 </form>
 
             </div>
